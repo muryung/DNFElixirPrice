@@ -12,7 +12,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class AdventurerIngredient {
-    private String key = "EVETgNNQJhLBXxXm9JQg37MsfWS8OHt7";
     private String stringData;
 
     String GetAdventurerIngredient() throws IOException {
@@ -20,7 +19,7 @@ public class AdventurerIngredient {
         try {
 
             StringBuilder urlBuilder = new StringBuilder("https://api.neople.co.kr/df/auction?itemName=노련한 모험가의 영혼&sort=unitPrice:asc&apikey="); /*URL*/
-            urlBuilder.append(key);
+            urlBuilder.append(MainActivity.dnfApiKey);
             URL url = new URL(urlBuilder.toString());
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
