@@ -21,6 +21,7 @@ Emulator : Pixel 4 API 29 <br>
 SDK : API 31
 
 # 사용법
+자신의 google-services.json를 Project->app 하위에 넣기
 MainActivity에서 dnfApiKey, firebaseKey, deviceToken 변수 수정 및 실행 <br>
 필요 시 title, body 변수도 수정
 
